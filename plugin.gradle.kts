@@ -1,0 +1,14 @@
+//
+// A Gradle build file for testing the plugin built by build.gradle
+//
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'org.liquibase:liquibase-gradle-plugin:2.0.3-SNAPSHOT'
+        classpath 'com.h2database:h2:1.3.159'
+    }
+}
+
+apply(plugin = "liquibase")
