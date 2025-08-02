@@ -1,0 +1,11 @@
+[versions]
+gradle-publish = "1.3.1"
+liquibase = "4.27.0"
+junit = "4.13.2"
+
+[libraries]
+liquibase = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
+junit = { module = "junit:junit", version.ref = "junit" }
+
+[plugins]
+gradle-publish = { id = "com.gradle.plugin-publish", version.ref = "gradle-publish" }
